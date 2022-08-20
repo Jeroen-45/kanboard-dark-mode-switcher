@@ -15,8 +15,8 @@ class Plugin extends Base
         /* Add css if dark mode is enabled */
         $this->template->hook->attach('template:layout:head', 'DarkModeSwitcher:DarkModeStyleInclude');
 
-        /* Register API procedure for setting dark mode state */
-        $this->api->getProcedureHandler()->withClassAndMethod('setDarkMode', new SetDarkModeProcedure($this->container), 'setDarkMode');
+        /* Load button handling js */
+        $this->hook->on('template:layout:js', array('template' => 'plugins/DarkModeSwitcher/Assets/SwitcherButton.js'));
     }
 
     public function onStartup()
