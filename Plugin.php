@@ -21,7 +21,6 @@ class Plugin extends Base
 
     public function onStartup()
     {
-        Translator::load($this->languageModel->getCurrentLanguage(), __DIR__.'/Locale');
     }
 
     public function getPluginName()
