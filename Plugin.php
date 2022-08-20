@@ -4,7 +4,6 @@ namespace Kanboard\Plugin\DarkModeSwitcher;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
-use Kanboard\Plugin\DarkModeSwitcher\Api\Procedure\SetDarkModeProcedure;
 
 class Plugin extends Base
 {
