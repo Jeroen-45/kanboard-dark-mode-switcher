@@ -12,10 +12,8 @@ class Plugin extends Base
         /* Add the switcher button in the header */
         $this->template->hook->attach('template:header:dropdown', 'DarkModeSwitcher:SwitcherButton');
 
-        /* Load dark mode CSS if dark mode is enabled for this user */
-        if ($this->user->userMetadataModel->get($this->user->getid(), "DarkModeSwitcher_DarkMode", false)) {
-            $this->hook->on('template:layout:css', array('template' => 'plugins/Css/Greenwing_dark.css'));
-        }
+        /* Add css if dark mode is enabled */
+        $this->template->hook->attach('template:layout:head', 'DarkModeSwitcher:DarkModeStyleInclude');
     }
 
     public function onStartup()
