@@ -4,6 +4,7 @@ namespace Kanboard\Plugin\DarkModeSwitcher;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
+use Kanboard\Plugin\DarkModeSwitcher\Api\Procedure\SetDarkModeProcedure;
 
 class Plugin extends Base
 {
@@ -14,6 +15,9 @@ class Plugin extends Base
 
         /* Add css if dark mode is enabled */
         $this->template->hook->attach('template:layout:head', 'DarkModeSwitcher:DarkModeStyleInclude');
+
+        /* Register API procedure for setting dark mode state */
+        $this->api->getProcedureHandler()->withClassAndMethod('setDarkMode', new SetDarkModeProcedure($this->container), 'setDarkMode');
     }
 
     public function onStartup()
