@@ -357,7 +357,7 @@ table tr td:first-child, table tr th:first-child {
     background-color: #374963;
 }
 
-.select2-container--default .select2-selection--single {
+.select2-container--default .select2-selection--single, .select2-selection__choice {
     background-color: #040404;
     border-color: #30363D;
 }
