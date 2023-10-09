@@ -9,7 +9,7 @@ body {
 }
 
 /* link color */
-.page-header h2 a:focus, .page-header h2 a:hover, a:focus, a:hover, .table-list .table-list-row .dropdown:focus .dropdown-menu .fa.fa-caret-down, .table-list .table-list-row .dropdown:focus .dropdown-menu strong, .table-list .table-list-row .dropdown:hover .dropdown-menu .fa.fa-caret-down, .table-list .table-list-row .dropdown:hover .dropdown-menu strong, table.table-striped.table-scrolling a:focus, table.table-striped.table-scrolling a:hover, table.table-striped.table-scrolling a:focus, table.table-striped.table-scrolling a:hover {
+.page-header h2 a:focus, .page-header h2 a:hover, a:focus, a:hover, .table-list .table-list-row .dropdown:focus .dropdown-menu .fa.fa-caret-down, .table-list .table-list-row .dropdown:focus .dropdown-menu strong, .table-list .table-list-row .dropdown:hover .dropdown-menu .fa.fa-caret-down, .table-list .table-list-row .dropdown:hover .dropdown-menu strong, table.table-striped.table-scrolling a:focus, table.table-striped.table-scrolling a:hover, table.table-striped.table-scrolling a:focus, table.table-striped.table-scrolling a:hover, .subtasks-table.table-striped.table-scrolling a:focus, .subtasks-table.table-striped.table-scrolling a:hover {
     color: #fff;
 }
 
